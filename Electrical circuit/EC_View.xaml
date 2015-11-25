@@ -1,0 +1,122 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" 
+        x:Class="Electrical_circuit.MainWindow"    
+        xmlns:user="clr-namespace:Electrical_circuit"
+        Title="Конструктор электрических схем" Height="500" Width="800" >
+
+    <Window.DataContext>
+        <user:EcViewModel/>
+    </Window.DataContext>
+
+    <Grid ShowGridLines="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="19*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid ShowGridLines="True" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2">
+            <Menu IsMainMenu="True" >
+                <MenuItem  Header="_New file" />
+                <MenuItem  Header="_Open file" />
+                <MenuItem  Header="_Save ass" />
+                <MenuItem  Header="_New element" />
+                <MenuItem  Header="_Instruction" Click="MenuItem_Click_2" />
+                <MenuItem  Header="_Support" Click="MenuItem_Click_1" />
+            </Menu>
+
+            <!-- Создание рабочего поля редактора -->
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="1" ShowGridLines="True">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                
+               </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+
+
+
+        </Grid>
+        <!-- Создание таблицы в левом углу -->
+        <Grid Grid.Row="1" Grid.Column="0" ShowGridLines="True">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Image Source="C:\Users\Denis\Documents\For kurs\Wire.png" Stretch="None" Grid.Row="0">
+               <!-- <DragDropEffects Values="mouse click">
+                   
+                </DragDropEffects> 
+                -->            
+            </Image>
+            
+            <Image Source="C:\Users\Denis\Documents\For kurs\Current_source.png" Stretch="None" Grid.Row="1"/>
+            <Image Source="C:\Users\Denis\Documents\For kurs\Resistance.png" Stretch="None" Grid.Row="2"/>
+            
+                
+            
+
+        </Grid>
+            
+    </Grid>
+
+</Window>

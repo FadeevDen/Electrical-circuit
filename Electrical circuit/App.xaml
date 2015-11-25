@@ -1,0 +1,8 @@
+﻿<Application x:Class="Electrical_circuit.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="EC_View.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
