@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" 
         x:Class="Electrical_circuit.MainWindow"    
         xmlns:user="clr-namespace:Electrical_circuit"
-        Title="Конструктор электрических схем" Height="500" Width="800" >
+        Title="Конструктор электрических схем" Height="600" Width="900" >
 
     <Window.DataContext>
         <user:EcViewModel/>
@@ -22,7 +22,6 @@
         <Grid ShowGridLines="True" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2">
             <Menu IsMainMenu="True" >
                 <MenuItem  Header="_New file" />
-                <MenuItem  Header="_Open file" />
                 <MenuItem  Header="_Save ass" />
                 <MenuItem  Header="_New element" />
                 <MenuItem  Header="_Instruction" Click="MenuItem_Click_2" />

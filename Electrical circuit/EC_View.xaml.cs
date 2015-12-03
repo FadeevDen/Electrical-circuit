@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,8 +29,8 @@ namespace Electrical_circuit
 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
-           WindowForSupport wfs1  = new WindowForSupport();
-           wfs1.Show();
+            WindowForSupport wfs1 = new WindowForSupport();
+            wfs1.Show();
         }
 
 
@@ -37,5 +39,7 @@ namespace Electrical_circuit
             WindowForInstruction wfi1 = new WindowForInstruction();
             wfi1.Show();
         }
+
     }
+            
 }
