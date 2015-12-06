@@ -8,6 +8,12 @@ namespace Electrical_circuit
 {
     public class AbstractFactory
     {
+        public abstract class Element
+        {
+            public MarginForElement margin { get; set; }
+            public EndsOfWire EndOfWire { get;  set; }
+        }        
+        
         public class Wire : Element
         {
 
@@ -22,7 +28,7 @@ namespace Electrical_circuit
         {
 
         }
-        public abstract class Element { }
+       
         public abstract class ElectricalFactory
         {
             public abstract Element CreateNewElement();

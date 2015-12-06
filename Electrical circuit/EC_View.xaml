@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" 
         x:Class="Electrical_circuit.MainWindow"    
         xmlns:user="clr-namespace:Electrical_circuit"
-        Title="Конструктор электрических схем" Height="600" Width="900" >
+        Title="ELectrical circuit" Height="600" Width="900" >
 
     <Window.DataContext>
         <user:EcViewModel/>
@@ -101,18 +101,33 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
-            <Image Source="C:\Users\Denis\Documents\For kurs\Wire.png" Stretch="None" Grid.Row="0">
-               <!-- <DragDropEffects Values="mouse click">
-                   
-                </DragDropEffects> 
-                -->            
-            </Image>
+            <Button Grid.Row="0">
+                <Button.Background>
+                    <ImageBrush ImageSource="C:\Users\Denis\Documents\For kurs\Wire.png">                       
+                    </ImageBrush>   
+                </Button.Background >
+            </Button>
+
+            <Button Grid.Row="1">
+                <Button.Background>
+                    <ImageBrush ImageSource="C:\Users\Denis\Documents\For kurs\Current_source.png">
+                    </ImageBrush>
+                </Button.Background >
+            </Button>
+
+            <Button Grid.Row="2">
+                <Button.Background>
+                    <ImageBrush ImageSource="C:\Users\Denis\Documents\For kurs\Resistance.png">
+                    </ImageBrush>
+                </Button.Background >
+            </Button>
             
-            <Image Source="C:\Users\Denis\Documents\For kurs\Current_source.png" Stretch="None" Grid.Row="1"/>
-            <Image Source="C:\Users\Denis\Documents\For kurs\Resistance.png" Stretch="None" Grid.Row="2"/>
-            
-                
-            
+            <Button Grid.Row="3">
+                <Button.Background>
+                    <ImageBrush ImageSource="C:\Users\Denis\Documents\For kurs\corner_wire.png">
+                    </ImageBrush>
+                </Button.Background>
+            </Button>
 
         </Grid>
             
