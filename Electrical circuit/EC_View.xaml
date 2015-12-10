@@ -27,7 +27,7 @@
                 <MenuItem  Header="_Instruction" Click="MenuItem_Click_2" />
                 <MenuItem  Header="_Support" Click="MenuItem_Click_1" />
                 <MenuItem Visibility="Hidden" Header="                                                                                                                                              "/>
-                <MenuItem Header="_Complete" IsCheckable="False" IsChecked="False" />
+                <MenuItem Header="_Complete" IsCheckable="{Binding Path=Checking}" IsChecked="False" />
             </Menu>
 
             <!-- Создание рабочего поля редактора -->

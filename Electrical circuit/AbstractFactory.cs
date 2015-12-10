@@ -28,6 +28,11 @@ namespace Electrical_circuit
         {
 
         }
+
+        public class CornerWire : Element
+        {
+             
+        }
        
         public abstract class ElectricalFactory
         {
@@ -56,6 +61,14 @@ namespace Electrical_circuit
             public override Element CreateNewElement()
             {
                 return new CurrentSource();
+            }
+        }
+
+        public class CornerWireFactory : ElectricalFactory
+        {
+            public override Element CreateNewElement()
+            {
+                return new CornerWire();
             }
         }
     }

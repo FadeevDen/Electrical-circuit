@@ -9,19 +9,20 @@ namespace Electrical_circuit
 {
     public class EndsOfWire
     {
-        public bool First { get;  set; }
-        public bool Second { get;  set; }
-
+        public Boolean First { get;  set; }
+        public Boolean Second { get;  set; }
+        public Boolean Checking { get; set; }
+       
         public void Check()
         {
             if (First && Second == true)
             {
-                
+                Checking = true;
             }
 
             else
             {
-                
+                Checking = false;
             }
         }
 
