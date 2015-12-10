@@ -8,6 +8,6 @@ namespace Electrical_circuit
 {
     public class EcViewModel
     {
-      
+       
     }
 }

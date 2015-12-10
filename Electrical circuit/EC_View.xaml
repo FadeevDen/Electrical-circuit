@@ -26,6 +26,8 @@
                 <MenuItem  Header="_New element" />
                 <MenuItem  Header="_Instruction" Click="MenuItem_Click_2" />
                 <MenuItem  Header="_Support" Click="MenuItem_Click_1" />
+                <MenuItem Visibility="Hidden" Header="                                                                                                                                              "/>
+                <MenuItem Header="_Complete" IsCheckable="False" IsChecked="False" />
             </Menu>
 
             <!-- Создание рабочего поля редактора -->
@@ -51,8 +53,8 @@
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
-                
-               </Grid.RowDefinitions>
+
+            </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -103,34 +105,34 @@
 
             <Button Grid.Row="0">
                 <Button.Background>
-                    <ImageBrush ImageSource="C:\Users\Denis\Documents\For kurs\Wire.png">                       
-                    </ImageBrush>   
+                    <ImageBrush ImageSource="Pictures\Wire.png">
+                    </ImageBrush>
                 </Button.Background >
             </Button>
 
             <Button Grid.Row="1">
                 <Button.Background>
-                    <ImageBrush ImageSource="C:\Users\Denis\Documents\For kurs\Current_source.png">
+                    <ImageBrush ImageSource="Pictures/current_source.png">
                     </ImageBrush>
                 </Button.Background >
             </Button>
 
             <Button Grid.Row="2">
                 <Button.Background>
-                    <ImageBrush ImageSource="C:\Users\Denis\Documents\For kurs\Resistance.png">
+                    <ImageBrush ImageSource="Pictures/Resistance.png">
                     </ImageBrush>
                 </Button.Background >
             </Button>
-            
+
             <Button Grid.Row="3">
                 <Button.Background>
-                    <ImageBrush ImageSource="C:\Users\Denis\Documents\For kurs\corner_wire.png">
+                    <ImageBrush ImageSource="Pictures/corner_wire.png">
                     </ImageBrush>
                 </Button.Background>
             </Button>
 
         </Grid>
-            
+
     </Grid>
 
 </Window>

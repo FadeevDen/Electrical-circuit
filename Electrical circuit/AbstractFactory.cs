@@ -10,8 +10,8 @@ namespace Electrical_circuit
     {
         public abstract class Element
         {
-            public MarginForElement margin { get; set; }
-            public EndsOfWire EndOfWire { get;  set; }
+            public MarginForElement Margin { get; set; }
+            public TypeOfElement Type { get; set; }
         }        
         
         public class Wire : Element

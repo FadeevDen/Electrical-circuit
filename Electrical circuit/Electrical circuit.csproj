@@ -76,7 +76,9 @@
     <Compile Include="AbstractFactory.cs" />
     <Compile Include="Builder.cs" />
     <Compile Include="EndOfWire.cs" />
+    <Compile Include="FlyWeight.cs" />
     <Compile Include="MarginForImages.cs" />
+    <Compile Include="TypeOfElement.cs" />
     <Compile Include="WindowForInstruction.xaml.cs">
       <DependentUpon>WindowForInstruction.xaml</DependentUpon>
     </Compile>
@@ -132,6 +134,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Pictures\corner_wire.png" />
+    <Resource Include="Pictures\current_source.png" />
+    <Resource Include="Pictures\Resistance.png" />
+    <Resource Include="Pictures\Wire.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

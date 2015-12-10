@@ -6,29 +6,29 @@ using System.Threading.Tasks;
 
 namespace Electrical_circuit
 {
-   class Director
+   public class Director
   {
        public void Construct(Builder builder, AbstractFactory.Element element)
        {
         builder.BuildProject(element);
        }
   }
- 
-  
-  abstract class Builder
+
+
+    public abstract class Builder
   {
     public abstract void BuildProject(AbstractFactory.Element element);
     public abstract Project GetResult();
   }
  
   
-  class BuilderNewProject : Builder
+  public class BuilderNewProject : Builder
   {
-    private Project project = new Project();
+    public Project project = new Project();
 
     public override void BuildProject(AbstractFactory.Element element)
     {
-             project.Add(element);
+      project.Add(element);
     }
     public override Project GetResult()
     {
@@ -36,13 +36,13 @@ namespace Electrical_circuit
     }
   }
   
-  class Project
+  public class Project
   {
-    private List<AbstractFactory.Element> _parts = new List<AbstractFactory.Element>();
+    public List<AbstractFactory.Element> ListOfElements = new List<AbstractFactory.Element>();
  
     public void Add(AbstractFactory.Element part)
     {
-      _parts.Add(part);
+      ListOfElements.Add(part);
     }
   }
 }
